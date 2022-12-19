@@ -1,0 +1,16 @@
+{
+    "name": "yle-bootstrap",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "sass --watch sass:dist --style compressed",
+        "build": "purgecss --css dist/main.css --content index.html --output dist/main.css"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "purgecss": "^5.0.0",
+        "sass": "^1.57.0"
+    }
+}
