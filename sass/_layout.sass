@@ -1,0 +1,105 @@
+header
+    height: 50px
+    nav
+        max-width: 1080px
+        display: flex
+        margin: auto
+        ul
+            justify-content: space-between
+            width: 400px
+            li
+                padding: 0.25rem
+                div
+                    .hide-on-desktop
+                        width: 0
+                        a
+                            display: none
+                            width: 0
+                            margin: 0
+                            padding: 0
+                            padding-top: 3em
+                div.dropdown-multicol
+                    margin-top: 0.8em
+                    width: 100vw
+                    position: absolute
+                    left: -1000px
+                    right: 0
+                    text-align: center
+                    padding: 1em
+                div.dropdown-multicol>div.dropdown-col
+                    display: inline-block
+                    vertical-align: top
+                    width: 5%
+                    min-width: 10em
+                button
+                    height: 24px
+                    margin-bottom: 5px
+        .input-group
+            height: 50px
+            overflow: hidden
+            .form-control
+                height: 50px
+                width: 70px
+                padding: 0
+                padding-left: 10px
+                border: none
+                border-left: 1px solid #4b535a
+                border-radius: 0
+            .form-control:focus
+                width: 200px
+                transition: width 0.5s
+                box-shadow: none
+            div
+                width: 50px
+                border: none
+                height: 50px
+                button
+                    border-left: none
+        .input-group:focus-within
+            width: 250px
+            transition: width 0.5s
+        #login
+            max-width: 200px
+            padding: 0 2em 0 2em
+            height: 50px
+            border-left: 1px solid #4b535a
+            border-right: 1px solid #4b535a
+            border-radius: 0
+            p
+                margin: auto
+                margin-right: 1em
+            svg
+                margin: auto
+
+@mixin mobile()
+
+//Mobile
+@media only screen and (max-width: 800px)
+    header
+        nav
+            ul
+                width: 20%
+                justify-content: start
+                li
+                    padding: 0.1rem
+                    .hide-on-mobile
+                        display: none
+                        width: 0
+                    div.dropdown-multicol>div.dropdown-col
+                        width: 40%
+                    .dropdown
+                        span
+                            display: none
+            .input-group
+                .form-control:focus
+                    width: 150px
+                    transition: width 0.5s
+            .input-group:focus-within
+                width: 200px
+                transition: width 0.5s
+        #login
+            p
+                width: 0
+                display: none
+            svg
+                width: 30px
