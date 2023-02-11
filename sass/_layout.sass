@@ -102,6 +102,31 @@ header
 main
     height: 300vh
     padding-top: 10px
+    div.first
+        section
+            width: 30%
+        div.list
+            width: 20%
+            max-height: 50vh
+            h4
+                padding: 1em 0 1em 1em
+            ul
+                list-style: none
+                overflow: hidden
+                li
+                    overflow: hidden
+                    div.numbers
+                        div.vertical-line
+                            border-left: 1px solid #d8d9db
+                            height: 70%
+                            margin-left: 0.8em
+                            margin-top: 0.3em
+                    div.article
+                        margin-left: 1em
+    div.second
+        div.news
+        div.timeline
+            width: 20%
 
 @mixin mobile()
 
@@ -135,3 +160,9 @@ main
                 display: none
             svg
                 width: 30px
+    main
+        div.first
+            section
+                width: 100%
+            div.list
+                display: none
